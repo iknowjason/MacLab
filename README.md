@@ -2,7 +2,7 @@
 
 ## Overview
 
-To be completed.
+To be completed soon.
 
 ## Requirements and Setup
 
