@@ -1,4 +1,4 @@
-# Automated Emulation Lab
+# Mac Lab
 
 ## Overview
 
