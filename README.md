@@ -168,7 +168,9 @@ terraform output
 
 A beautiful capability of these instances is they support EC2 user-data capability, allowing full automated and flexible custom configurations.  The Mac mini system is built from ```mac1.tf```.  The bootstrap script is located in ```files/mac/bootstrap.sh.tpl```.  Simply edit this script to make changes to how the Mac system configures itself.
 
+
 To access the Mac system and troubleshoot any bootstrap issues, SSH into the system by looking at the terraform output:
+
 
 ```
 SSH Access - Mac 1
@@ -176,7 +178,7 @@ SSH Access - Mac 1
 ssh -i ssh_key.pem ec2-user@ec2-3-17-144-231.us-east-2.compute.amazonaws.com
 ```
 
-Then tail the user-data logfile to monitor any potential issues with the bootstrap script.  When you add customized script commands in ```fils/mac/bootstrap.sh.tpl```, you will see the stdout output of those commands run from ```/var/log/user-data.log```:
+Then tail the user-data logfile to monitor any potential issues with the bootstrap script.  When you add customized script commands in ```files/mac/bootstrap.sh.tpl```, you will see the stdout of those commands logged to ```/var/log/user-data.log```.  After SSH is available, tail the file to watch it in realtime and troubleshoot any issues.
 
 ```
 tail -f /var/log/user-data.log
