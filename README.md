@@ -86,7 +86,7 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.pli
 
 4.  Disconnect from the SSH session by typing ```exit```
 
-5.  From your computer, type the following command, replacing the ```instance-public-dns-fqdn```.  This will set up port forwarding over SSH.  The -L will set up a local port of 22590 which will be forwarded over SSH to your remote Mac instance listening on port 5900.  Ensure that you stay connected for the duration of the remote desktop connectedion needed. 
+5.  From your computer, type the following command, replacing the ```instance-public-dns-fqdn```.  This will set up port forwarding over SSH.  The ```-L 22590``` will set up a local port of 22590 which will be forwarded over SSH to your remote Mac instance listening on port 5900.  Ensure that you stay connected for the duration of the remote desktop connection or as needed: 
 
 ```
 sudo ssh -L 22590:localhost:5900 -i ssh_key.pem ec2-user@instance-public-dns-fqdn
