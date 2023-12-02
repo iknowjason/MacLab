@@ -65,7 +65,7 @@ Last login: Sat Dec  2 15:01:00 2023
     └───┴──┘  macOS Ventura 13.6.1
 ```
 
-### GUI Connection:  VNC or Apple Remote Desktop (ARN)
+### GUI Connection
 
 These instructions below were adapted from Amazon's docs because the default ports they listed caused issues.  Verified that this works Mac-to-Mac.
 
