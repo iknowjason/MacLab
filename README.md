@@ -95,7 +95,7 @@ You should now see this screen and can enter the credentials for your ec2-user.
 
 Amazon requires your Mac instance to run on a dedicated EC2 host allocated in your AWS account.  When you spin up this lab, it automatically allocates a dedicated host required to run your Mac.  Here is an explanation directly from Amazon on this:  "As I explained previously, when using EC2 Mac instances, there is no virtual machine involved. These are running on bare metal servers, each hosting a Mac mini."
 
-**This host must be allocated to your account for 24 hours and can't be destroyed**.  
+**This host must be allocated to your account for 24 hours and can't be destroyed until it has been 24 hours**.  
 
 So if you spin this up, you can destory after 24 hours.  When you run a ```terraform destroy```, you will see this prior to 24 hours.  The host needs 24 hours to be released:
 
