@@ -95,9 +95,7 @@ sudo ssh -L 22590:localhost:5900 -i ssh_key.pem ec2-user@instance-public-dns-fqd
 - Select Connect to Server.
 - In the Server Address field, enter vnc://localhost:22590
 
-You should now see this screen and can enter the credentials for your ec2-user.
-
-![Remote Desktop](mac-ss.png "Remote Desktop")
+You should now see the image above and can enter the credentials for your ec2-user.
 
 ## IMPORTANT BEFORE BUILDING:  PLEASE READ
 
