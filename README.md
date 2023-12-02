@@ -4,6 +4,32 @@
 
 To be completed soon.
 
+## Remote Access
+
+### SSH
+
+Grab the output from ```terraform output``` which should show your EC2 Mac instance's public DNS.  The SSH key is already created and in your local directory as ```ssh_key.pem```.  Is this dangerous?  See the **Important Firewall and White listing** for more information.  The output should look like this:
+
+```
+SSH Access - Mac 1
+----------
+ssh -i ssh_key.pem ec2-user@ec2-3-17-144-231.us-east-2.compute.amazonaws.com
+```
+
+Type those command and you're in.
+```
+% ssh -i ssh_key.pem ec2-user@ec2-3-17-144-231.us-east-2.compute.amazonaws.com
+Last login: Sat Dec  2 15:01:00 2023
+
+    ┌───┬──┐   __|  __|_  )
+    │ ╷╭╯╷ │   _|  (     /
+    │  └╮  │  ___|\___|___|
+    │ ╰─┼╯ │  Amazon EC2
+    └───┴──┘  macOS Ventura 13.6.1
+```
+
+### VNC or Apple Remote Desktop (ARN)
+
 ## Requirements and Setup
 
 Tested with:
