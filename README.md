@@ -9,7 +9,9 @@ Mac Lab is a simple terraform template creating a customizable Mac OS lab for se
 * Mac connected to AWS VPC with subnets and Security groups
 * A flexible and customizable configuration for user-data that allows injecting customized scripts and bootstrap configuration.  See the **Customizing** section for more information.
 
-This template can be extended to allow automation for scaling a fleet of Macs leveraging AWS services such as EBS volumes, snapshots, and other services.
+This template can be extended to allow automation for scaling a fleet of Macs leveraging AWS services such as EBS volumes, snapshots, and other services.  Reference Amazon's announcement for more information:
+
+https://aws.amazon.com/blogs/aws/use-amazon-ec2-m1-mac-instances-to-build-test-macos-ios-ipados-tvos-and-watchos-apps/
 
 ![Remote Desktop](mac-ss.png "Remote Desktop")
 
