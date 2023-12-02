@@ -7,6 +7,7 @@ Mac Lab is a simple terraform template creating a customizable Mac OS lab for se
 * A Mac mini running on M2 but can be customized for Intel, M1, or M2 Pro.
 * A dedicated host running on a bare metal server connected to AWS Nitro system
 * Mac connected to AWS VPC with subnets and Security groups
+* A flexible and customizable configuration for user-data that allows injecting customized scripts and bootstrap configuration
 
 This template can be extended to allow automation for scaling a fleet of Macs leveraging AWS services such as EBS volumes, snapshots, and other services.
 
