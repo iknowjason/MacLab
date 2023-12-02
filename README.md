@@ -30,7 +30,7 @@ Last login: Sat Dec  2 15:01:00 2023
 
 ### GUI Connection:  VNC or Apple Remote Desktop (ARN)
 
-These instructions below were adapted from Amazon's docs because the default ports they listed resulted in an issue for me.
+These instructions below were adapted from Amazon's docs because the default ports they listed caused issues.  Verified that this works Mac-to-Mac.
 
 Reference:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-vnc
 
