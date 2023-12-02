@@ -55,7 +55,7 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.pli
 sudo ssh -L 22590:localhost:5900 -i ssh_key.pem ec2-user@instance-public-dns-fqdn
 ```
 
-6. From your local computer, use the ARD client or VNC client that supports ARD to connect to localhost:22590. For example, use the Screen Sharing application on macOS as follows:
+6. From your local computer, use the ARD or VNC client that supports Apple Remote Desktop (ARD) to connect to localhost:22590. For example, use the screen sharing application on macOS as follows:
 - Open Finder and select Go.
 - Select Connect to Server.
 - In the Server Address field, enter vnc://localhost:22590
