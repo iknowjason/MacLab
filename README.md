@@ -62,7 +62,7 @@ sudo ssh -L 22590:localhost:5900 -i ssh_key.pem ec2-user@instance-public-dns-fqd
 
 You should now see this screen and can enter the credentials for your ec2-user.
 
-![Remote Desktop](macss.png "Remote Desktop")
+![Remote Desktop](mac-ss.png "Remote Desktop")
 
 
 ## Requirements and Setup
