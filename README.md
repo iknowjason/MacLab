@@ -8,7 +8,7 @@ To be completed soon.
 
 ### SSH
 
-Grab the output from ```terraform output``` which should show your EC2 Mac instance's public DNS.  The SSH key is already created and in your local directory as ```ssh_key.pem```.  Is this dangerous?  See the **Important Firewall and White listing** for more information.  The output should look like this:
+Grab the output from ```terraform output``` which should show your EC2 Mac instance's public DNS.  The SSH key is already created and in your local directory as ```ssh_key.pem```.  Can others access my Mac?  See the **Important Firewall and White listing** for more information.  The output should look like this:
 
 ```
 SSH Access - Mac 1
