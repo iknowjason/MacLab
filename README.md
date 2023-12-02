@@ -41,7 +41,7 @@ Reference:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instance
 sudo passwd ec2-user
 ```
 
-3.  Install and start MacOS screen sharing:
+3.  Enable and start MacOS screen sharing (will be automated soon through bootstrap script):
 ```
 sudo launchctl enable system/com.apple.screensharing
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
