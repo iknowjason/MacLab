@@ -2,8 +2,15 @@
 
 ## Overview
 
-To be completed soon.
+Mac Lab is a simple terraform template creating a customizable Mac OS lab for security testing and Apple developer use cases.  It automatically builds a Mac mini computer attached through Thunderbolt to the AWS Nitro system.  From Amazon, "There is no hypervisor involved, and you get full bare metal performance of the underlying Mac mini.  An EC2 dedicated host reserves a Mac mini for your usage."
 
+* A Mac mini running on M2 but can be customized for Intel, M1, or M2 Pro.
+* A dedicated host running on a bare metal server connected to AWS Nitro system
+* Mac connected to AWS VPC with subnets and Security groups
+
+This template can be extended to allow automation for scaling a fleet of Macs leveraging AWS services such as EBS volumes, snapshots, and other services.
+
+![Remote Desktop](mac-ss.png "Remote Desktop")
 
 ### Mac Architectures
 
