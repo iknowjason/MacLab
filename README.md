@@ -91,6 +91,20 @@ You should now see this screen and can enter the credentials for your ec2-user.
 
 ![Remote Desktop](mac-ss.png "Remote Desktop")
 
+## IMPORTANT BEFORE BUILDING:  PLEASE READ
+
+Amazon requires your Mac instance to run on a dedicated EC2 host allocated in your AWS account.  When you spin up this lab, it automatically allocates a dedicated host required to run your Mac.
+
+**This host must be allocated to your account for 24 hours and can't be destroyed**.  
+
+So if you spin this up, you can destory after 24 hours.  When you run a ```terraform destroy```, you will see this prior to 24 hours.  The host needs 24 hours to be released:
+
+```
+│ Error: releasing EC2 Host (h-06a303b1211602365): 1 error occurred:
+│ 	* h-06a303b1211602365: Client.HostMinAllocationPeriodUnexpired: Unable to release Dedicated Host h-06a303b1211602365. mac2-m2.metal hosts must be allocated to your AWS account for at least 24 hour(s). You can release this host any time after 2023-12-03T14:33:06.089Z.
+```
+
+So if you are building this, just understand you'll need to wait 24 hours to finally destroy or release the dedicated host.
 
 ## Requirements and Setup
 
