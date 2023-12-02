@@ -166,7 +166,7 @@ terraform output
 
 ## Customizing
 
-The Mac mini system is built from ```mac1.tf```.  The bootstrap script is located in ```files/mac/bootstrap.sh.tpl```.
+A beautiful capability of these instances is they support EC2 user-data capability, allowing full automated and flexible custom configurations.  The Mac mini system is built from ```mac1.tf```.  The bootstrap script is located in ```files/mac/bootstrap.sh.tpl```.  Simply edit this script to make changes to how the Mac system configures itself.
 
 To access the Mac system and troubleshoot any bootstrap issues, SSH into the system by looking at the terraform output:
 
