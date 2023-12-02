@@ -4,6 +4,33 @@
 
 To be completed soon.
 
+
+### Template Examples for Building Intel, M1, M2, M2Pro
+
+Easily test and swap between different Mac architectures such as M1, M2, Intel, or M2Pro.
+
+The default terraform file, ```mac1.tf```, builds an M2 mac.  You can easily build a different architecture by using a template in the ```examples``` directory.  Simply copy the terraform file and replace the existing ```mac1.tf``` file in this directory.
+
+Intel (x86_64):
+```
+cp examples/mac-intel-example.tf mac1.tf
+```
+
+M1:
+```
+cp examples/mac-m1-example.tf mac1.tf
+```
+
+M2 (Default):
+```
+cp examples/mac-m2-example.tf mac1.tf
+```
+
+M2Pro:
+```
+cp examples/mac-m2pro-example.tf mac1.tf
+```
+
 ## Remote Access
 
 ### SSH
