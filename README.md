@@ -93,7 +93,7 @@ You should now see this screen and can enter the credentials for your ec2-user.
 
 ## IMPORTANT BEFORE BUILDING:  PLEASE READ
 
-Amazon requires your Mac instance to run on a dedicated EC2 host allocated in your AWS account.  When you spin up this lab, it automatically allocates a dedicated host required to run your Mac.
+Amazon requires your Mac instance to run on a dedicated EC2 host allocated in your AWS account.  When you spin up this lab, it automatically allocates a dedicated host required to run your Mac.  Here is an explanation directly from Amazon on this:  "As I explained previously, when using EC2 Mac instances, there is no virtual machine involved. These are running on bare metal servers, each hosting a Mac mini."
 
 **This host must be allocated to your account for 24 hours and can't be destroyed**.  
 
