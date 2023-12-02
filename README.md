@@ -5,7 +5,7 @@
 To be completed soon.
 
 
-### Architectures
+### Mac Architectures
 
 Easily test and swap between different Mac architectures such as M1, M2, Intel, or M2Pro.
 
