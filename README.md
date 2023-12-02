@@ -55,7 +55,7 @@ ssh -i ssh_key.pem ec2-user@ec2-3-17-144-231.us-east-2.compute.amazonaws.com
 
 Type those command and you're in.
 ```
-% ssh -i ssh_key.pem ec2-user@ec2-3-17-144-231.us-east-2.compute.amazonaws.com
+ssh -i ssh_key.pem ec2-user@ec2-3-17-144-231.us-east-2.compute.amazonaws.com
 Last login: Sat Dec  2 15:01:00 2023
 
     ┌───┬──┐   __|  __|_  )
@@ -165,6 +165,22 @@ terraform output
 ```
 
 ## Customizing
+
+The Mac mini system is built from ```mac1.tf```.  The bootstrap script is located in ```files/mac/bootstrap.sh.tpl```.
+
+To access the Mac system and troubleshoot any bootstrap issues, SSH into the system by looking at the terraform output:
+
+```
+SSH Access - Mac 1
+----------
+ssh -i ssh_key.pem ec2-user@ec2-3-17-144-231.us-east-2.compute.amazonaws.com
+```
+
+Then tail the user-data logfile to monitor any potential issues with the bootstrap script.  When you add customized script commands in ```fils/mac/bootstrap.sh.tpl```, you will see the stdout output of those commands run from ```/var/log/user-data.log```:
+
+```
+tail -f /var/log/user-data.log
+```
 
 ## Important Firewall and White Listing
 Inbound SSH access to your Mac should only be allowed sourced from your public IPv4 address.  By default when you run terraform apply, your public IPv4 address is determined via a query to ifconfig.so and the ```terraform.tfstate``` is updated automatically.  If your location changes, simply run ```terraform apply``` to update the security groups with your new public IPv4 address.  If ifconfig.me returns a public IPv6 address,  your terraform will break.  In that case you'll have to customize the white list.  To change the white list for custom rules, update this variable in ```sg.tf```:
