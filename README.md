@@ -9,7 +9,7 @@ To be completed soon.
 
 Easily test and swap between different Mac architectures such as M1, M2, Intel, or M2Pro.
 
-The default terraform file, ```mac1.tf```, builds an M2 mac.  You can easily build a different architecture by using a template in the ```examples``` directory.  Simply copy the terraform file and replace the existing ```mac1.tf``` file in this directory.
+The default terraform file, ```mac1.tf```, builds an M2 mac.  You can build a different architecture by using a template in the ```examples``` directory.  Simply copy the terraform file and replace the existing ```mac1.tf``` file in this directory.
 
 Intel (x86_64):
 ```
