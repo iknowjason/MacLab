@@ -28,7 +28,42 @@ Last login: Sat Dec  2 15:01:00 2023
     └───┴──┘  macOS Ventura 13.6.1
 ```
 
-### VNC or Apple Remote Desktop (ARN)
+### GUI Connection:  VNC or Apple Remote Desktop (ARN)
+
+These instructions below were adapted from Amazon's docs because the default ports they listed resulted in an issue for me.
+
+Reference:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-vnc
+
+1. You need a VNC or ARD client.  If you're connecting from a Mac you can use the built-in screen sharing application.
+
+2. SSH into your Mac and setup the ec2-user password (will be automated soon through bootstrap script)
+```
+sudo passwd ec2-user
+```
+
+3.  Install and start MacOS screen sharing:
+```
+sudo launchctl enable system/com.apple.screensharing
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
+```
+
+4.  Disconnect from the SSH session by typing ```exit```
+
+5.  From your computer, type the following command, replacing the ```instance-public-dns-fqdn```.  This will set up port forwarding over SSH.  The -L will set up a local port of 22590 which will be forwarded over SSH to your remote Mac instance listening on port 5900.  Ensure that you stay connected for the duration of the remote desktop connectedion needed. 
+
+```
+sudo ssh -L 22590:localhost:5900 -i ssh_key.pem ec2-user@instance-public-dns-fqdn
+```
+
+6. From your local computer, use the ARD client or VNC client that supports ARD to connect to localhost:22590. For example, use the Screen Sharing application on macOS as follows:
+- Open Finder and select Go.
+- Select Connect to Server.
+- In the Server Address field, enter vnc://localhost:22590
+
+You should now see this screen and can enter the credentials for your ec2-user.
+
+![Remote Desktop](macss.png "Remote Desktop")
+
 
 ## Requirements and Setup
 
