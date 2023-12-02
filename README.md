@@ -5,7 +5,7 @@
 To be completed soon.
 
 
-### Template Examples for Building Intel, M1, M2, M2Pro
+### Building Different Architectures (Intel)
 
 Easily test and swap between different Mac architectures such as M1, M2, Intel, or M2Pro.
 
@@ -153,6 +153,6 @@ locals {
 }
 ```
 
-### Mac Examples for Building Intel, M1, M2, M2Pro
+
 
 
